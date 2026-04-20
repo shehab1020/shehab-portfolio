@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shehab Mohamed | Backend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+<div class="cursor-glow" id="cursor"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <svg width="160" height="38" viewBox="0 0 160 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Shehab Mohamed">
+      <defs>
+        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#7eb8a4"/>
+          <stop offset="100%" stop-color="#6b9fd4"/>
+        </linearGradient>
+        <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#dde3ee"/>
+          <stop offset="100%" stop-color="#a8b8cc"/>
+        </linearGradient>
+      </defs>
+      <!-- Hexagonal accent mark behind S -->
+      <polygon points="10,5 19,5 24,14 19,23 10,23 5,14" fill="none" stroke="url(#logoGrad)" stroke-width="1.2" opacity="0.6"/>
+      <!-- S monogram inside hex -->
+      <text x="14.5" y="19" font-family="'Bricolage Grotesque', sans-serif" font-weight="800" font-size="13" fill="url(#logoGrad)" text-anchor="middle" dominant-baseline="middle">S</text>
+      <!-- Full name: Shehab -->
+      <text x="32" y="24" font-family="'Bricolage Grotesque', sans-serif" font-weight="800" font-size="19" fill="url(#nameGrad)" letter-spacing="-0.5">hehab</text>
+      <!-- Underline accent line -->
+      <line x1="32" y1="29" x2="95" y2="29" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+      <!-- .dev suffix -->
+      <text x="100" y="24" font-family="'DM Mono', monospace" font-weight="400" font-size="11" fill="#7eb8a4" letter-spacing="0.5" opacity="0.9">.dev</text>
+    </svg>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-blob blob1"></div>
+  <div class="hero-blob blob2"></div>
+  <div class="hero-blob blob3"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available For Work
+    </div>
+
+    <h1 class="hero-name">
+      <span class="name-line1">Shehab</span>
+      <span class="name-line2">Mohamed</span>
+    </h1>
+
+    <p class="hero-title">
+      Backend Developer · <span>Django Specialist</span>
+    </p>
+
+    <p class="hero-desc">
+      Backend developer specializing in building robust APIs and scalable server-side systems using Django & Django REST Framework. I turn complex ideas into clean, efficient technical solutions.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-terminal">
+    <div class="terminal-header">
+      <span class="t-dot t-red"></span>
+      <span class="t-dot t-yellow"></span>
+      <span class="t-dot t-green"></span>
+      <span class="terminal-title">shehab@dev ~ %</span>
+    </div>
+    <div class="terminal-body">
+      <div class="t-comment"># Developer Profile</div>
+      <div><span class="t-key">name</span>: <span class="t-str">"Shehab Mohamed Mohamed"</span></div>
+      <div><span class="t-key">role</span>: <span class="t-str">"Backend Developer"</span></div>
+      <div><span class="t-key">stack</span>: [</div>
+      <div style="padding-left:20px"><span class="t-val">"Django"</span>, <span class="t-val">"DRF"</span>, <span class="t-val">"Python"</span>,</div>
+      <div style="padding-left:20px"><span class="t-val">"PostgreSQL"</span>, <span class="t-val">"Redis"</span>,</div>
+      <div style="padding-left:20px"><span class="t-val">"Docker"</span>, <span class="t-val">"Celery"</span></div>
+      <div>]</div>
+      <div><span class="t-key">status</span>: <span class="t-val">available</span></div>
+      <div><span class="t-key">passion</span>: <span class="t-str">"Clean Code ♥"</span></div>
+      <div style="margin-top:8px"><span class="t-comment">$ python manage.py runserver</span></div>
+      <div><span class="t-val">✓</span> Server running on port <span class="t-str">8000</span> <span class="t-cursor"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label reveal">Who I Am</p>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2 class="section-title">About <span>Shehab</span></h2>
+      <p>
+        Hey! I'm <strong>Shehab Mohamed Mohamed</strong>, a passionate backend developer focused on building sophisticated and efficient server-side systems. I specialize in web application development using <strong>Python & Django</strong>, with a strong emphasis on code quality and best practices.
+      </p>
+      <p>
+        I believe good code isn't just code that works — it's code that is <strong>clean, maintainable, and scalable</strong>. I love solving complex problems and transforming them into simple, elegant solutions.
+      </p>
+      <p>
+        Outside of coding, I spend my time learning new technologies and contributing to the developer community.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">10+</span>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2+</span>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <div class="stat-label">On-Time Delivery</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <h3 style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:24px;letter-spacing:0.5px;text-transform:uppercase;font-family:'DM Mono',monospace;">Personal Info</h3>
+      <div class="info-row">
+        <span class="info-key">Full Name</span>
+        <span class="info-val">Shehab Mohamed Mohamed</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Specialization</span>
+        <span class="info-val">Backend Development</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Primary Framework</span>
+        <span class="info-val accent">Django & DRF</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Main Language</span>
+        <span class="info-val">Python</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Remote Work</span>
+        <span class="info-val accent">✓ Available</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Status</span>
+        <span class="info-val accent">Open to Opportunities</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label reveal">Tech Stack</p>
+  <h2 class="section-title reveal">Technical <span>Skills</span></h2>
+
+  <div class="skills-grid">
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🐍</div>
+      <div class="skill-cat-name">Languages & Frameworks</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Django</span>
+        <span class="skill-tag">Django REST</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">OOP</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🗄️</div>
+      <div class="skill-cat-name">Databases</div>
+      <div class="skill-tags">
+        <span class="skill-tag blue">PostgreSQL</span>
+        <span class="skill-tag blue">MySQL</span>
+        <span class="skill-tag blue">SQLite</span>
+        <span class="skill-tag blue">Redis</span>
+        <span class="skill-tag blue">Django ORM</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">⚡</div>
+      <div class="skill-cat-name">APIs & Integrations</div>
+      <div class="skill-tags">
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">JWT Auth</span>
+        <span class="skill-tag">OAuth2</span>
+        <span class="skill-tag">WebSockets</span>
+        <span class="skill-tag">Celery</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🐳</div>
+      <div class="skill-cat-name">DevOps & Deployment</div>
+      <div class="skill-tags">
+        <span class="skill-tag orange">Docker</span>
+        <span class="skill-tag orange">Linux</span>
+        <span class="skill-tag orange">Nginx</span>
+        <span class="skill-tag orange">Git</span>
+        <span class="skill-tag orange">GitHub CI</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🔐</div>
+      <div class="skill-cat-name">Security & Auth</div>
+      <div class="skill-tags">
+        <span class="skill-tag purple">JWT</span>
+        <span class="skill-tag purple">Django Auth</span>
+        <span class="skill-tag purple">Permissions</span>
+        <span class="skill-tag purple">CORS</span>
+        <span class="skill-tag purple">HTTPS</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🧪</div>
+      <div class="skill-cat-name">Testing & Quality</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Pytest</span>
+        <span class="skill-tag">Django Tests</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">TDD</span>
+        <span class="skill-tag">Swagger</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label reveal">Portfolio</p>
+  <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+
+  <div class="projects-grid">
+    <div class="project-card featured reveal">
+      <div class="featured-badge">FEATURED</div>
+      <div class="project-header">
+        <div class="project-icon">🛒</div>
+        <div class="project-links">
+          <a href="#" class="project-link" title="Live Demo">↗</a>
+          <a href="#" class="project-link" title="GitHub">gh</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">E-Commerce Platform</div>
+        <div class="project-desc">
+          A fully-featured e-commerce backend with product management, order processing, and payment integration. Supports coupon systems, reviews, and real-time shipment tracking.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Django</span>
+          <span class="stack-tag">DRF</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Redis</span>
+          <span class="stack-tag">Celery</span>
+          <span class="stack-tag">Stripe</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">💬</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗</a>
+          <a href="#" class="project-link">gh</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Real-Time Chat System</div>
+        <div class="project-desc">
+          A real-time messaging application supporting group and private chats, with an advanced notification system and file sharing capabilities.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Django Channels</span>
+          <span class="stack-tag">WebSockets</span>
+          <span class="stack-tag">Redis</span>
+          <span class="stack-tag">JWT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">📋</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗</a>
+          <a href="#" class="project-link">gh</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Task Management System</div>
+        <div class="project-desc">
+          A professional project management platform with multi-level role permissions, progress tracking, and detailed exportable reports.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Django</span>
+          <span class="stack-tag">DRF</span>
+          <span class="stack-tag">Permissions</span>
+          <span class="stack-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">📰</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗</a>
+          <a href="#" class="project-link">gh</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Blog & CMS API</div>
+        <div class="project-desc">
+          A content management system API with full CRUD for articles, categories, tags, and a commenting system with social login integration.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Django</span>
+          <span class="stack-tag">DRF</span>
+          <span class="stack-tag">OAuth2</span>
+          <span class="stack-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🏥</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗</a>
+          <a href="#" class="project-link">gh</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Clinic Booking System</div>
+        <div class="project-desc">
+          A medical appointment management system with doctor availability scheduling, automated email reminders via Celery, and patient history tracking.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Django</span>
+          <span class="stack-tag">Celery</span>
+          <span class="stack-tag">Redis</span>
+          <span class="stack-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon">🔗</div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗</a>
+          <a href="#" class="project-link">gh</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Social Network API</div>
+        <div class="project-desc">
+          A social media backend API supporting user profiles, follow systems, post feeds, likes, comments, and a real-time notification engine.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Django</span>
+          <span class="stack-tag">DRF</span>
+          <span class="stack-tag">JWT</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Docker</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-label reveal">Journey</p>
+  <h2 class="section-title reveal">Work <span>Experience</span></h2>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023 — Present</div>
+      <div class="timeline-role">Backend Developer</div>
+      <div class="timeline-company">Freelance / Remote</div>
+      <ul class="timeline-desc">
+        <li>Designed and built REST APIs for various clients using Django REST Framework.</li>
+        <li>Implemented JWT authentication and role-based permission systems.</li>
+        <li>Deployed applications on Linux servers using Docker and Nginx.</li>
+        <li>Integrated third-party payment gateways including Stripe and PayPal.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2022 — 2023</div>
+      <div class="timeline-role">Junior Backend Developer</div>
+      <div class="timeline-company">Tech Startup · Cairo, Egypt</div>
+      <ul class="timeline-desc">
+        <li>Developed and maintained Django-based web application features.</li>
+        <li>Optimized database queries and improved API response times by 40%.</li>
+        <li>Collaborated with frontend developers using REST API documentation.</li>
+        <li>Wrote unit tests with Pytest to ensure code reliability.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2021 — 2022</div>
+      <div class="timeline-role">Python Developer Intern</div>
+      <div class="timeline-company">Software Company · Egypt</div>
+      <ul class="timeline-desc">
+        <li>Assisted in building internal tools and automation scripts with Python.</li>
+        <li>Learned Django fundamentals and REST API design principles.</li>
+        <li>Participated in code reviews and agile development workflows.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <p class="section-label reveal" style="justify-content:center;">Let's Talk</p>
+    <h2 class="section-title reveal" style="margin-bottom:20px;">Get In <span>Touch</span></h2>
+    <p class="contact-desc reveal">
+      Have a project in mind or want to collaborate? I'm always open to discussing new opportunities. Feel free to reach out!
+    </p>
+
+    <a href="mailto:shehab@example.com" class="contact-email reveal">
+      shehab@example.com
+    </a>
+
+    <div class="social-links reveal">
+      <a href="#" class="social-link">⌥ GitHub</a>
+      <a href="#" class="social-link">in LinkedIn</a>
+      <a href="#" class="social-link">✉ Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">
+    © 2025 <span>Shehab Mohamed</span>. Built with Python & passion.
+  </div>
+  <div class="footer-copy">
+    <span>Django</span> · <span>DRF</span> · <span>PostgreSQL</span>
+  </div>
+</footer>
+
+<script>
+  // Cursor glow
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
